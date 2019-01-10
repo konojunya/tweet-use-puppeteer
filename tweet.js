@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 
 async function tweet(text) {
-  // ブライザ開く
+  // エライザ開く
   const browser = await puppeteer.launch({
     args: ["--lang=ja,en-US,en"], // 日本語にする
     headless: false // headlessモードをtrue/falseにする（trueだとブラウザでてこないが、今回はgit取るためにfalseにしてる）
