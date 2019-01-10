@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 
 async function tweet(text) {
-  // エライザ開く
+  // ブラウザ開く
   const browser = await puppeteer.launch({
     args: ["--lang=ja,en-US,en"], // 日本語にする
     headless: false // headlessモードをtrue/falseにする（trueだとブラウザでてこないが、今回はgit取るためにfalseにしてる）
@@ -34,7 +34,7 @@ async function tweet(text) {
   );
 
   // ページ遷移するの待つ
-  await page.waitFor(5000);
+  await page.waitFor("#global-new-tweet-button", {timeout: 5000});
 
   // ツイートボタンclick
   await page.click("#global-new-tweet-button");
