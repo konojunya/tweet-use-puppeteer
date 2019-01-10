@@ -1,0 +1,11 @@
+{
+  "name": "tweet-use-puppeteer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/konojunya/tweet-use-puppeteer.git",
+  "author": "konojunya <junya03dance@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^1.11.0"
+  }
+}
